@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.root {
+  width: 100%;
+  height: 100dvh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input {
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --btn-bg-color-d: #d38a5a;
+  --btn-bg-color: #fd9b59;
+  --btn-bg-color-h: #fdc459;
+  --bg-img-color: #eba844;
+  --bg-img-color-g: #fec404;
+  --navbar: #952d2d;
+}
+
+.header {
+  position: relative;
+  z-index: 10;
+  height: 5.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.header-fixed {
+  background-color: rgb(255, 221, 0);
+  position: fixed;
+  width: 100% !important;
+  z-index: 1000;
+}
+
+.navbar {
+  background-color: var(--btn-bg-color);
+}
+
+.con-1 {
+  width: 90%;
+  height: 100dvh;
+  margin: 0 auto;
+}
+
+.table-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background-color: #ffffff;
+  box-shadow: -0.2rem 0.2rem 1.6rem -0.9rem black;
+  border-radius: 0.4rem;
+  position: relative;
+  top: 2rem;
+  overflow: auto;
+
+}
+
+.btn {
+  width: 150px;
+  background-color: var(--btn-bg-color);
+  border: none;
+  outline: none;
+  height: 49px;
+  border-radius: 49px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn1 {
+  background-color: #8480e1;
+  border: none;
+  outline: none;
+  height: 49px;
+  border-radius: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0 7px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.btn1:hover {
+  background-color: #6a66b3;
+}
+
+
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+  background-color: var(--btn-bg-color-d);
+}
+
+.btn:hover {
+  background-color: var(--btn-bg-color-h);
+}
+
+@media screen and (max-width: 1024px) {
+  .table-container {
+    display: block;
+    margin: auto;
+    border-radius: 0.4rem;
+    position: relative;
+    top: 2rem;
+    overflow-x: scroll;
+    overflow-y: unset;
+  }
+}
